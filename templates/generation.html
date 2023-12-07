@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<!--    <script>-->
+<!--        const interval = setInterval(function () {-->
+<!--            fetch('/<-id->', { method: "GET" }).then(function (response) {-->
+<!--                return response.text();-->
+<!--            }).then(function (string) {-->
+<!--                document.body.innerHTML = string;-->
+<!--                clearInterval(interval);-->
+<!--            });-->
+<!--        }, 15000);-->
+<!--    </script>-->
+    <script>
+    async function fetchData() {
+        try {
+            const response = await fetch('/<-id->', { method: "GET" });
+            const string = await response.text();
+            document.body.innerHTML = string;
+        } catch (error) {
+            console.error('Ошибка получения данных:', error);
+        }
+    }
+
+    fetchData();
+</script>
+</head>
+
+<body>
+<div style="text-align: center">
+<style>.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}</style>
+    <center><div class="loader" style="text-align: center"></div></center>
+<h1>Идет генирация текста... Пожалуйста подождите</h1>
+</div>
+</body>
+
+</html>

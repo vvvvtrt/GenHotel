@@ -3,26 +3,20 @@ import os
 
 
 def furniture_recognition(file_name):
-    important_furniture = {"diningtable": "стол",
-                           "pottedplant": "цветы в горшке",
-                           "sofa": "диван",
-                           "chair": "стул",
+    important_furniture = {"diningtable": "стол на котором можно работать",
+                           "pottedplant": "цветы в горшке для создания уютной обстановки",
                            "microwave": "микроволновка",
-                           "toaster": "refrigerator",
+                           "toaster": "тостер",
                            "hairdryer": "фен",
-                           "tvmonitor": "телевизор",
-                           "oven": "печь",
+                           "tvmonitor": "телевизор для хорошего времяпрепровождения",
                            "refrigerator": "холодильник"}
 
-    important_furnitures = {"diningtable": "столов",
-                            "pottedplant": "цвет в горшке",
-                            "sofa": "диванов",
-                            "chair": "стульев",
+    important_furnitures = {"diningtable": "столов на котором можно работать",
+                            "pottedplant": "цветы в горшке для создания уютной обстановки",
                             "microwave": "микроволновок",
                             "toaster": "тостеров",
                             "hairdryer": "фенов",
-                            "tvmonitor": "телевизоров",
-                            "oven": "печей",
+                            "tvmonitor": "телевизоров для хорошего времяпрепровождения",
                             "refrigerator": "холодильников"}
 
     execution_path = os.getcwd()
@@ -46,7 +40,7 @@ def furniture_recognition(file_name):
         # print(eachObject["name"] , " : ", eachObject["percentage_probability"], " : ", eachObject["box_points"] )
         # print("--------------------------------")
 
-    answer_text = "В номерах присудствует следующая мебель: "
+    answer_text = ""
 
     for i in dict_in:
         if dict_in[i] == 1:
@@ -58,4 +52,4 @@ def furniture_recognition(file_name):
 
 
 if __name__ == '__main__':
-    print(furniture_recognition("test3.jpeg"))
+    print(furniture_recognition("image/test1.jpeg"))

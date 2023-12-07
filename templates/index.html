@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="ru"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>GenHostel</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='nicepage.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='nicepage.js') }}" defer=""></script>
+    <meta name="generator" content="Nicepage 5.8.2, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Страница 1">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/">
+    <style>
+    #image-upload {
+        font-family: 'Courier New', monospace;
+        border-radius: 15px;
+        color: black;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+}
+</style>
+</head>
+<body class="u-body u-xl-mode" data-lang="ru">
+    <section class="u-clearfix u-section-1" id="sec-4216">
+        <div class="u-absolute-hcenter u-custom-color-2 u-expanded u-shape u-shape-rectangle"></div>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="u-radius-15 u-shape u-shape-round u-white u-shape-2" style="padding-left: 15px; padding-right: 15px">
+                <b4><b><code>Длина текста:</code></b></b4>
+                <div style="padding-left: 10px;margin-bottom: 1px;">
+                    <label class="toggle" for="option3">
+                        <input type="radio" id="option3" name="size" value="1"> <code> - Маленький </code>
+                        <span class="indicator"></span>
+                    </label>
+                </div>
+                <div style="padding-left: 10px;margin-bottom: 1px;">
+                    <label class="toggle" for="option4">
+                        <input type="radio" id="option4" name="size" value="2"> <code> - Средний</code>
+                        <span class="indicator"></span>
+                    </label>
+                </div>
+
+                <div style="padding-left: 10px;margin-bottom: 10px;">
+                    <label class="toggle" for="option5">
+                        <input type="radio" id="option5" name="size" value="3"> <code> - Большой</code>
+                        <span class="indicator"></span>
+                    </label>
+                </div>
+
+                <b4><code><b>Выберите стиль написания</b></code></b4>
+                <div style="padding-left: 10px;margin-bottom: 1px;">
+                    <label class="toggle" for="option1">
+                        <input type="radio" id="option1" name="style" value="1"> <code> - Художественный стиль </code>
+                        <span class="indicator"></span>
+                    </label>
+                </div>
+                <div style="padding-left: 10px;margin-bottom: 1px;">
+                    <label class="toggle" for="option2">
+                        <input type="radio" id="option2" name="style" value="2"> <code> - Деловой стиль</code>
+                        <span class="indicator"></span>
+                    </label>
+                </div>
+
+                <label for="text-input" style="margin-bottom 10px;"><b><code>Важные слова</code></b></label><br>
+                <textarea id="text-input1" name="text_im" style="width: 100%; height: 100px; padding: 10px; border-radius: 15px; margin-bottom: 10px; background-color: #E2FFE2"></textarea><br>
+
+                <label for="text-input" style="margin-bottom 10px;"><b><code>Стоп слова</code></b></label><br>
+                <textarea id="text-input2" name="text_notim" style="width: 100%; height: 100px; padding: 10px; border-radius: 15px; margin-bottom: 10px; background-color: #FFE2E2"></textarea><br>
+
+
+                <div style="margin-bottom: 15px; margin-top: 15px;">
+                    <label for="image-upload"><code><b>Загрузить картинку:</b></code></label>
+                    <input type="file" id="image-upload" name="file" style="font-family: sans-serif;"><br><br>
+                </div>
+            </div>
+            <div class="u-radius-15 u-shape u-shape-round u-white u-shape-3" style="padding-left: 15px; padding-right: 15px;">
+                <label for="text-input" style="margin-bottom 10px;"><b><code>Введите описание</code></b></label><br>
+                <textarea id="text-input" name="text" style="width: 100%; height: 625px; padding: 10px; border-radius: 10px; margin-bottom: 10px;"></textarea><br>
+                <div style="text-align: right;">
+                    <style>
+                        input[type="submit"] {
+                            border-radius: 15px; /* Радиус скругления углов */
+                            background-color: #5960FF; /* Изменение цвета кнопки */
+                            color: white; /* Изменение цвета текста на кнопке */
+                            padding: 5px 15px; /* Поля внутри кнопки */
+                            border: none; /* Убираем границу у кнопки, если не нужна */
+                          }
+                    </style>
+                    <code><input type="submit" value="Отправить" style="text-align: right;"></code>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
