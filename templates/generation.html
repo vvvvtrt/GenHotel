@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 
 <html>
-<!--    <script>-->
-<!--        const interval = setInterval(function () {-->
-<!--            fetch('/<-id->', { method: "GET" }).then(function (response) {-->
-<!--                return response.text();-->
-<!--            }).then(function (string) {-->
-<!--                document.body.innerHTML = string;-->
-<!--                clearInterval(interval);-->
-<!--            });-->
-<!--        }, 15000);-->
-<!--    </script>-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Загрузка данных...</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='nicepage.css') }}" media="screen">
+<link rel="stylesheet" href="{{ url_for('static', filename='generation.css') }}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='nicepage.js') }}" defer=""></script>
+    <meta name="generator" content="Nicepage 5.8.2, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+
+
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Страница 2">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/">
+
     <script>
     async function fetchData() {
         try {
@@ -42,7 +55,7 @@
     100% { transform: rotate(360deg); }
 }</style>
     <center><div class="loader" style="text-align: center"></div></center>
-<h1>Идет генирация текста... Пожалуйста подождите</h1>
+    <h4><code>Идет генирация текста... Пожалуйста подождите</code></h4>
 </div>
 </body>
 
